@@ -1,0 +1,70 @@
+version: '3.4'
+
+networks:
+  def:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+
+services:
+  client:
+    image: pmcwalrus/clan_chat_client:latest
+    ports:
+      - 5200:5200
+    networks:
+      def:
+        ipv4_address: 172.20.0.2
+
+  backend_1:
+    image: pmcwalrus/clan_chat_service:latest
+    ports:
+      - 5000:5000
+    networks:
+      def:
+        ipv4_address: 172.20.0.3
+      
+  backend_2:
+    image: pmcwalrus/clan_chat_service:latest
+    ports:
+      - 5001:5000
+    networks:
+      def:
+        ipv4_address: 172.20.0.4
+
+  proxy:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 5100:5100
+    networks:
+      def:
+        ipv4_address: 172.20.0.5
+
+  redis:
+    image: redis/redis-stack-server:latest
+    networks:
+      def:
+        ipv4_address: 172.20.0.6
+    ports:
+        - 6379:6379
+
+  postgresql:
+    image: postgres:12.8
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=va
+      - POSTGRES_USER=va      
+    ports:
+      - 5432:5432
+    networks:
+      def:
+        ipv4_address: 172.20.0.7
+  
+  migration:
+    image: pmcwalrus/clan_chat_migration
+    entrypoint: ./wait-for-it.sh postgresql:5432 -- dotnet ClanChat.Migrations.dll
+    networks:
+      def:
+        ipv4_address: 172.20.0.8
+

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClanChat.ServiceHost", "src\ClanChat.ServiceHost\ClanChat.ServiceHost.csproj", "{8317C2DB-F383-4180-A422-81F1EDC5B8D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7143004F-8209-4ADD-8A65-0AD2C92289D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClanChat.Application", "src\ClanChat.Application\ClanChat.Application.csproj", "{13C3611D-0373-4024-B12E-A51D31B8485F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClanChat.Integration.EntityFramework", "src\ClanChat.Integration.EntityFramework\ClanChat.Integration.EntityFramework.csproj", "{E70EB300-D4F4-415E-800F-7C255ACC946B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClanChat.Migrations", "src\ClanChat.Migrations\ClanChat.Migrations.csproj", "{C86A3957-F743-4876-A24A-B1D9711FC2DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClanChat.Integration.HttpApi", "src\ClanChat.Integration.HttpApi\ClanChat.Integration.HttpApi.csproj", "{27DB3A58-4C99-464B-9B77-508D26C1B531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClanChat.Client", "src\ClanChat.Client\ClanChat.Client.csproj", "{91789538-DECB-4A69-861B-9FB820ED6F79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClanChat.Integration.SignalR", "src\ClanChat.Integration.SignalR\ClanChat.Integration.SignalR.csproj", "{1A18C3A8-252D-40AD-ACD0-C6784DEA5B48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8317C2DB-F383-4180-A422-81F1EDC5B8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8317C2DB-F383-4180-A422-81F1EDC5B8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8317C2DB-F383-4180-A422-81F1EDC5B8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8317C2DB-F383-4180-A422-81F1EDC5B8D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C3611D-0373-4024-B12E-A51D31B8485F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C3611D-0373-4024-B12E-A51D31B8485F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C3611D-0373-4024-B12E-A51D31B8485F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C3611D-0373-4024-B12E-A51D31B8485F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E70EB300-D4F4-415E-800F-7C255ACC946B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70EB300-D4F4-415E-800F-7C255ACC946B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70EB300-D4F4-415E-800F-7C255ACC946B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70EB300-D4F4-415E-800F-7C255ACC946B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86A3957-F743-4876-A24A-B1D9711FC2DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86A3957-F743-4876-A24A-B1D9711FC2DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86A3957-F743-4876-A24A-B1D9711FC2DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86A3957-F743-4876-A24A-B1D9711FC2DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27DB3A58-4C99-464B-9B77-508D26C1B531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27DB3A58-4C99-464B-9B77-508D26C1B531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27DB3A58-4C99-464B-9B77-508D26C1B531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27DB3A58-4C99-464B-9B77-508D26C1B531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91789538-DECB-4A69-861B-9FB820ED6F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91789538-DECB-4A69-861B-9FB820ED6F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91789538-DECB-4A69-861B-9FB820ED6F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91789538-DECB-4A69-861B-9FB820ED6F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A18C3A8-252D-40AD-ACD0-C6784DEA5B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A18C3A8-252D-40AD-ACD0-C6784DEA5B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A18C3A8-252D-40AD-ACD0-C6784DEA5B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A18C3A8-252D-40AD-ACD0-C6784DEA5B48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13C3611D-0373-4024-B12E-A51D31B8485F} = {7143004F-8209-4ADD-8A65-0AD2C92289D7}
+		{E70EB300-D4F4-415E-800F-7C255ACC946B} = {7143004F-8209-4ADD-8A65-0AD2C92289D7}
+		{27DB3A58-4C99-464B-9B77-508D26C1B531} = {7143004F-8209-4ADD-8A65-0AD2C92289D7}
+		{1A18C3A8-252D-40AD-ACD0-C6784DEA5B48} = {7143004F-8209-4ADD-8A65-0AD2C92289D7}
+	EndGlobalSection
+EndGlobal
